@@ -1,6 +1,6 @@
 # Edge_33_BLE
 
-<h1 align="center"> Captura de dados e criaçãao de um dataset</h1>
+<h1 align="center"> Captura de dados e criação de um dataset</h1>
 
 Esse projeto tem como objetivo capturar dados do acelerômetro presente na placa arduino nano 33 ble e salvar os dados em um arquivo .csv
 o tempo de leitura do acelerômetro é de 10ms e o tempo de escrita no arquivo é de 4 segundos.

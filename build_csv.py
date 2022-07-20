@@ -9,7 +9,7 @@ ser = serial.Serial(porta,baud)
 ser.flushInput()
 print("Abrindo Serial")
 
-wait_time = 4
+wait_time = 10
 previous_time = time()
 
 while time()-previous_time < wait_time:

@@ -1,6 +1,9 @@
 #include <Arduino.h>
 #include "Arduino_LSM9DS1.h"
 
+
+#define G_TO_MS2 9.80665f
+
 int timestamp = 0;
 float x, y, z;
 unsigned long previous_time = 0;
@@ -26,7 +29,8 @@ void loop() {
     if (IMU.accelerationAvailable()) {
       IMU.readAcceleration(x, y, z);
     }
-    Serial.println(String(timestamp)+","+String(x)+","+String(y)+","+String(z));
+
+    Serial.println(String(timestamp)+","+String(x*G_TO_MS2)+","+String(y*G_TO_MS2)+","+String(z*G_TO_MS2));
     timestamp++;
   }
 }
